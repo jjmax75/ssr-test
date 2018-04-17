@@ -9,6 +9,7 @@ const browserConfig = {
     filename: 'bundle.js',
     publicPath: '/',
   },
+  mode: 'development',
   module: {
     rules: [{ test: /\.(js)$/, use: 'babel-loader' }],
   },
@@ -28,6 +29,7 @@ const serverConfig = {
     filename: 'server.js',
     publicPath: '/',
   },
+  mode: 'development',
   module: {
     rules: [{ test: /\.(js)$/, use: 'babel-loader' }],
   },

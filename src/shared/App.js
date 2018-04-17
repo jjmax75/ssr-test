@@ -2,7 +2,7 @@ import React from 'react';
 
 class App extends React.Component {
   render() {
-    return <React.Fragment>Watch me render</React.Fragment>;
+    return <React.Fragment>Watch me render {this.props.data}</React.Fragment>;
   }
 }
 
