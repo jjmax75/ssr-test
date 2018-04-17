@@ -1,8 +1,8 @@
-import path from 'path';
-import webpack from 'webpack';
-import nodeExternals from 'webpack-node-externals';
+var path = require('path');
+var webpack = require('webpack');
+var nodeExternals = require('webpack-node-externals');
 
-export const browserConfig = {
+const browserConfig = {
   entry: './src/browser/index.js',
   output: {
     path: path.resolve(__dirname, 'public'),
@@ -19,7 +19,7 @@ export const browserConfig = {
   ],
 };
 
-export const serverConfig = {
+const serverConfig = {
   entry: './src/server/index.js',
   target: 'node',
   externals: [nodeExternals()],
@@ -38,4 +38,4 @@ export const serverConfig = {
   ],
 };
 
-export default serverConfig;
+module.exports = [browserConfig, serverConfig];
