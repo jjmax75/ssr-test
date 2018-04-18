@@ -10,8 +10,13 @@
   },
   "author": "John Behan",
   "babel": {
-    "presets": ["env", "react"],
-    "plugins": ["transform-object-rest-spread"]
+    "presets": [
+      "env",
+      "react"
+    ],
+    "plugins": [
+      "transform-object-rest-spread"
+    ]
   },
   "license": "ISC",
   "devDependencies": {
